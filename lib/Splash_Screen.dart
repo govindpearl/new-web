@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:onclickproperty/Main_Home_Page.dart';
 
 import 'Screens/Home_Page.dart';
+import 'login_flow/signin.dart';
 
 
 
@@ -40,8 +41,8 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     // Simulate a delay before navigating to the main screen
     Future.delayed(Duration(seconds: 3), () {
-      Navigator.push(context, MaterialPageRoute(builder: (context)=>HomeScreen()));
-      //Navigator.push(context, MaterialPageRoute(builder: (context)=>signinscreen()));
+      //Navigator.push(context, MaterialPageRoute(builder: (context)=>HomeScreen()));
+      Navigator.push(context, MaterialPageRoute(builder: (context)=>signinscreen()));
       // Navigator.pushReplacementNamed(context, '/main');
     });
   }

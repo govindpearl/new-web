@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
+
+import '../API_COLLECTION.dart';
 class SendScreen extends StatefulWidget {
 
   @override
@@ -32,7 +34,7 @@ class _SendScreenState extends State<SendScreen> {
                 ),
                 initialUrlRequest: URLRequest(
 
-                  url: Uri.parse('https://onclickproperty.com/home/MyProfile?mp=project'),
+                  url: Uri.parse(SEND_PAGE_URL),
                 ),
                 onWebViewCreated: (controller) {
                   _webViewController = controller;

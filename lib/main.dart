@@ -11,10 +11,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'InAppWebView Example',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      //title: 'InAppWebView Example',
+      // theme: ThemeData(
+      //   primarySwatch: Colors.blue,
+      // ),
       home: SplashScreen(),
     );
   }

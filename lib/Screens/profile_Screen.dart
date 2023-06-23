@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
+import 'package:onclickproperty/API_COLLECTION.dart';
 class ProfileScreen extends StatefulWidget {
 
   @override
@@ -32,7 +33,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
                 initialUrlRequest: URLRequest(
 
-                  url: Uri.parse('https://onclickproperty.com/home/MyProfile?mp=myprofile'),
+                  url: Uri.parse(PROFILE_PAGE_URL),
                 ),
                 onWebViewCreated: (controller) {
                   _webViewController = controller;
